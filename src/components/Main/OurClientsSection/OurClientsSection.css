@@ -1,0 +1,17 @@
+/* Main - our-client ( section )*/
+
+.our-clients__inner {
+    text-align: center;
+}
+
+.our-clients-paragraph {
+    margin-bottom: 16px;
+}
+
+.our-clients-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    flex-wrap: wrap;
+    gap: min(9.35vw, 60px)
+}

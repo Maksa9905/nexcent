@@ -1,0 +1,20 @@
+/* Main - experience (section) */
+
+.experience__inner {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.experience-body {
+    p {
+        margin-bottom: 32px;
+    }
+}
+
+.experience-illustration {
+    img {
+        width: clamp(340px ,30vw ,433px);
+        height: auto;
+    }
+}

@@ -1,0 +1,28 @@
+/* main - author (section) */
+
+.author-words {
+    background-color: var(--neutral-silver);
+    padding: 32px 0;
+}
+
+.author-words__inner {
+    display: flex;
+    gap: 78px
+}
+
+.author-portrait-container {
+    img {
+        width: 326px;
+        aspect-ratio: 1;
+    }
+}
+
+.author-words-body {
+    p {
+        margin-bottom: 16px;
+    }
+
+    .our-clients-list {
+        gap: clamp(20px, 2.84vw, 25px)
+    }
+}

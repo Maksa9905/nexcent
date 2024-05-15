@@ -1,0 +1,45 @@
+/* Main - stats (section) */
+
+.stats {
+    background-color: var(--neutral-silver);
+}
+
+.stats__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0;
+}
+
+.stats-data-list {
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+.stats-data-item {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.members::before {
+    content: url("../../../assets/stats-icon1.svg");
+}
+
+.clubs::before {
+    content: url("../../../assets/stats-icon3.svg");
+}
+
+.event-bookings::before {
+    content: url("../../../assets/stats-icon2.svg");
+}
+
+.payments::before {
+    content: url("../../../assets/stats-icon4.svg");
+}

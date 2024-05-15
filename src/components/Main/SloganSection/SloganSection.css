@@ -1,0 +1,14 @@
+/* Main - Slogan (section) */
+
+.slogan {
+    background-color: var(--neutral-silver);
+}
+
+.slogan__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    padding: 32px 0; 
+}

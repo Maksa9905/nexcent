@@ -1,0 +1,30 @@
+.modal-window-fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.modal-window-fade-exit {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-window-fade-enter-active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-window-fade-exit-active {
+    opacity: 0;
+    z-index: 1;
+}
+
+.modal-window-fade-enter-done {
+    z-index: 1;
+}
+
+
+.modal-window-fade-enter-active,
+.modal-window-fade-exit-active {
+    transition: opacity 300ms;
+    z-index: 1;
+}

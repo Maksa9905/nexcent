@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jua&family=Kiwi+Maru&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap');
+
+
+/* Colors */
+
+* {
+    /* Neutral */
+    --neutral-dark: #18191F;
+    --neutral-black: #263238;
+    --neutral-d_grey: #4D4D4D;
+    --neutral-grey: #717171;
+    --neutral-l_grey: #89939E;
+    --neutral-grey-blue: #ABBED1;
+    --neutral-silver: #F5F7FA;
+    --neutral-white: #FFFFFF;
+
+    /* Primary */
+
+    --primary: #43A046;
+
+    /* Secondary */
+
+    --secondary: #263238;
+
+    /* Info */
+
+    --info: #2194f3;
+
+    /* Color Shade */
+
+    --shade1: #43A046;
+    --shade2: #388E3B;
+    --shade3: #237D31;
+    --shade4: #1B5E1F;
+    --shade5: #103E13;
+
+    /* Color Tint */
+
+    --tint1: #66BB69;
+    --tint2: #81C784;
+    --tint3: #A5D6A7;
+    --tint4: #C8E6C9;
+    --tint5: #E8F5E9;
+
+    /* Actions */
+
+    --warning: #FBC02D;
+    --error: #E53835;
+    --success: #2E7D31;
+
+
+    --header-height: 84px;
+}
+
+/* Fonts/Typography */
+
+/* Inter */
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+    color: var(--neutral-d_grey);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: clamp(36px, 4.38vw, 64px);
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* Body */
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.body1, .body2, .body3, .body4 {
+    color: var(--neutral-grey)
+}
+
+.body1 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.body2 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.body3 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.body4 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+button {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: var(--neutral-white);
+    font-size: 14px;
+}
+
+button.transparent {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.container {
+    width: 1220px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--neutral-white);
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 80%;
+    background-color:var(--primary)
+}
+
+
+/* Media requests */
+
+@media screen and (width <= 1024px) {
+    .header__inner {
+        flex-wrap: wrap;
+        justify-content: space-around
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .features-list {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    
+    .stats__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .community-paragraph {
+        width: auto;
+    }
+
+    .community-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .community-item {
+        margin-bottom: -30px;    
+    }
+
+
+    .community-item-image-container {
+        img {
+            width: clamp(320px ,48.82vw, 500px);
+        }
+    }
+
+    .footer__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px
+    }
+}
+
+@media screen and (width <= 768px) {
+    .main-slider-content {
+        gap: 40px;
+    }
+
+    .experience__inner {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .author-words__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (width <= 620px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+    .main-slider {
+        height: calc(100vh - 1/2 * var(--header-height));
+    }
+
+    .main-slider-content {
+        flex-direction: column-reverse;
+    }
+
+    .features-title {
+        font-size: 28px;
+    }
+
+    .stats-data-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer-nav {
+        width: 130px;
+    }
+}

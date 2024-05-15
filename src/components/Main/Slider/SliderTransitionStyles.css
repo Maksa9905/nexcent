@@ -1,0 +1,25 @@
+.slider-fade-enter {
+    opacity: 0;
+    z-index: 0;
+}
+
+.slider-fade-exit {
+    opacity: 1;
+    z-index: 0;
+}
+
+.slider-fade-enter-active {
+    opacity: 1;
+    z-index: 0;
+}
+
+.slider-fade-exit-active {
+    opacity: 0;
+    z-index: 0;
+}
+
+.slider-fade-enter-active,
+.slider-fade-exit-active {
+    transition: opacity 300ms;
+    z-index: 0;
+}

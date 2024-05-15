@@ -1,0 +1,26 @@
+/* Main - features (section) */
+
+.features__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features-paragraph {
+    margin-bottom: 16px;
+}
+
+.features-list {
+    display: flex;
+    gap: clamp(30px, 8.82vw, 127px);
+    align-items: center;
+}
+
+.features-item {
+    padding: 24px 32px;
+}
+
+.features-icon {
+    margin-bottom: 16px;
+}
